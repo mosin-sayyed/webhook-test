@@ -1,12 +1,15 @@
-ame: Test Build
+name: Test Workflow
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Print message
-        run: echo "BuildWatch Test Successful"
+      - uses: actions/checkout@v4
+
+      - run: echo "Hello"
