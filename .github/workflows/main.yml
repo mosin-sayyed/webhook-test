@@ -1,0 +1,12 @@
+ame: Test Build
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "BuildWatch Test Successful"
